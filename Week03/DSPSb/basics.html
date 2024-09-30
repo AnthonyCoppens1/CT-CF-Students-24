@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the page</title>
+</head>
+
+<body style="background-color:darkturquoise;" class="bodyclass">
+    This is the content of the page.
+    <p>This is a paragraph</p>
+    <p>This is another one</p>
+    <p>And a very last one.</p>
+
+    <!--This is a comment
+    And I can continue over multiple lines-->
+
+    <!--Headers -> <hx> tags-->
+    <h1>This is the biggest header, aka header 1</h1>
+    <h2>This is a second header</h2>
+    <h3>This is the third</h3>
+    <h4>And a little smaller</h4>
+
+    <!--<br> for new line, no new paragraph
+    <hr/> for horizontal line-->
+    This is text with a paragraph end <br>
+    and lots of spa&nbsp;ces and a horizontal line.
+    <hr />
+
+    <p>
+        <b>This text is bold</b><br>
+        <i>This is italic</i><br>
+        <u>This text is underlined.</u><br>
+        <b><u><i>This text is a combination of all 3.</i></u></b>
+    </p>
+
+    <strong>This text is also bold</strong>
+    <em>This is also italic</em>
+    <br>
+
+    <!--Linking to files, different pages = hyperlinks -->
+    <!--open hyperlink in new tab -> add target="_blank"-->
+    <a href="text.html" target="_blank">Click here!</a>
+
+    <br>
+    <!--opening up images-->
+    <a href="orange.jpg" target="_blank">Click here</a> to open the image.
+
+    <br>
+    <!--mailing to someone-->
+    <a href="mailto:anthony.coppens@thomasmore.be">anthony.coppens@thomasmore.be</a>
+
+    <br>
+    <!--opening a website-->
+    <a href="http://www.thomasmore.be">This is a link to the thomas more website</a>
+    and this is not treated the same way.
+
+    <br>
+    <!--Target another element in the same page-->
+    <!--If you want to test this, move the a href to the top?-->
+    <a href="#Life">Life</a>
+    some text<br>
+    some more text<br>
+
+    <h4>
+        <a id="Life">Life</a>
+    </h4>
+
+    <!--Images-->
+    <!-- put a ../ in front of the file for every folder that you go outward.
+     if you move deeper than current directory of html file, add folder names.-->
+
+    <img src="images/jpg/orange.jpg" alt="orange">
+    <!--alt is for when the image fails to load-->
+    <!--BEST TO PUT ALL IMAGES IN A FOLDER-->
+    <br>
+    <!--add height and width with either x%, x or x px for dimensions-->
+    <img src="images/jpg/orange2.jpg" alt="orange2" height="10%" width="10%"><br>
+
+    <!--Audio-->
+    <audio controls>
+        <source src="squeeze.mp3" type="audio/mp3">
+        <!--<source src="squeeze.ogg" type="audio/ogg">-->
+        Might be that the browser doesnt support mp3.
+    </audio><br>
+
+    <!--video-->
+    <video height="25%" width="25%" controls>
+        <source src="livingroom.mp4" type="video/mp4">
+        Browser might not support this type.
+    </video>
+
+    <!--LISTS: 2 options -> unordered lists - ul tag OR ordered lists - ol tag-->
+    <!--ul -> unordered list-->
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+
+    <!--ol -> ordered list-->
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+
+    <!--ol possibilities: 1 a A i I-->
+    <ol type="A">
+        <li>1st item</li>
+        <li>2nd item</li>
+        <li>3rd item</li>
+    </ol>
+
+    <!--ul possibilities: disc square circle-->
+    <ul type="square">
+        <li>1st item</li>
+        <li>2nd item</li>
+        <li>3rd item</li>
+    </ul>
+
+
+    <!--nested lists-->
+    <ul type="circle">
+        <li>1st item</li>
+        <ul type="disc">
+            <li>1.1</li>
+            <li>1.2</li>
+            <li>1.3</li>
+        </ul>
+        <li>2nd item</li>
+        <li>3rd item</li>
+    </ul>
+
+
+    <!--Tables: tr = table row tag / td = table column / th = table header-->
+    <table border="1">
+        <!--first row-->
+        <tr>
+            <td>first row first column</td>
+            <td>first row, second column</td>
+        </tr>
+        <!--second row-->
+        <tr>
+            <td>second row first column</td>
+            <td>second row, second column</td>
+        </tr>
+    </table><br>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Place of birth</th>
+        </tr>
+        <tr>
+            <td>Anthony</td>
+            <td>29</td>
+            <td>Wilrijk</td>
+        </tr>
+        <tr>
+            <td>Elke</td>
+            <td>45</td>
+            <td>Mechelen</td>
+        </tr>
+    </table>
+
+
+    <!--cellpadding vs cellspacing-->
+    <!--cellpadding = more space around text-->
+    <table border="1" cellpadding="50">
+        <tr>
+            <td>A lot of space</td>
+        </tr>
+    </table><br>
+
+    <!--cellspacing = space of border-->
+    <table border="1" cellspacing="50">
+        <tr>
+            <td>No space at all</td>
+        </tr>
+    </table><br>
+
+    <!--merging rows-->
+    <table border="1">
+        <tr>
+            <td>1st row 1st col</td>
+            <td rowspan="2">2nd col</td>
+        </tr>
+        <tr>
+            <td>2nd row 1st col</td>
+        </tr>
+        <tr>
+            <td>3rd row 1st col</td>
+            <td>this one isn't merged</td>
+        </tr>
+    </table><br>
+
+    <!--merging columns-->
+    <table border="1">
+        <tr>
+            <td>first row first col</td>
+            <td>first row second col</td>
+            
+        </tr>
+        <tr>
+            <td colspan="2">second row</td>
+        </tr>
+    </table>
+</body>
+
+</html>

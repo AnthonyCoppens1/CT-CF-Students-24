@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the page</title>
+</head>
+
+<body style="background-color: greenyellow;" class="bodyclass">
+    This is the content of the page.
+    <!--If you wanna take notes, do it in comments-->
+    <!--<p> for paragraph-->
+    <p>This is a paragraph.</p>
+    <p>This is another one</p>
+    <p>Adding a last one</p>
+
+    <!--<hx> for any header-->
+    <h1>This is header1</h1>
+    <h2>This is header 2</h2>
+    <h3>This is the third header</h3>
+    <h4>This is number 4</h4>
+
+    This is text <br /> with alinea end
+    and
+    lots of spaces and a horizontal line.
+    <hr />
+    another way of crea&nbspting a space<br />
+    <!--&nbsp -> for a space -->
+    <p>
+        <b>This text is bold</b><br>
+        <i>This text is italic</i><br>
+        <u>This text is underlined</u><br>
+        <b><i><u>This text is a combination of the 3</u></i></b>
+    </p>
+
+    <strong>This is also bold</strong>
+    <em>This is ALSO italic</em>
+    <br>
+
+    <!--Linking different pages together -- hyperlink-->
+    <!--Link to different files and use target="_blank" to open a new tab-->
+    <a href="text.html" target="_blank">Click here!</a> to open up a new tab,
+    without target it changes the current tab.<br>
+
+    <!--Link to image in current directory-->
+    <a href="santa.jpg">Click here</a> to open this specific image<br>
+
+    <!--email to a person through a link-->
+    <a href="mailto:anthony.coppens@thomasmore.be">Mail me!</a><br>
+
+    <!--open a website-->
+    <a href="http://www.thomasmore.be">click for website</a>
+
+    <!--Target another element in the same page-->
+    <a href="#Life">Life</a>
+    This is some example filler<br>
+    And this line too<br>
+
+    <!--second we want to navigate to-->
+    <h4>
+        <a id="Life">Life</a>
+    </h4> This is the segment we went to!<br>
+
+    <!--IMAGES-->
+    <!--../ for every folder you go back use it 1 time
+    santa.jpg is in current directory, ../santa.jpg is in one folder previously
+    and ../../santa.jpg is in 2 folders up. to navigate deeper check below.-->
+    <img src="images/jpg/santa.jpg" alt="santa" height="25%" width="25%">
+
+    <!--to format your image either us x%, x or x px-->
+    <br>
+    <!--Audio-->
+    <audio controls>
+        <source src="christmas.mp3" type="audio/mpeg">
+        Browser might not support this element.
+        <!--<source src="christmas.ogg" type="audio/ogg">-->
+    </audio>
+
+    <br>
+    <!--Video-->
+    <video height="25%" width="25%" controls>
+        <source src="livingroom.mp4" type="video/mp4">
+        Browser might not support this element.
+    </video>
+
+
+    <!--LISTS-->
+    <!--creating a list -> 2 variants: UL: unordered list / OL: ordered list-->
+    <!--UNORDERED LIST -> ul tag-->
+    <ul>
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+    </ul>
+
+    <!--ORDERED LIST -> ol tag-->
+    <ol>
+        <li>1st item</li>
+        <li>2nd item</li>
+        <li>3rd item</li>
+    </ol>
+
+    <!--ol possibilities: 1 a A i I-->
+    <ol type="i">
+        <li>1st item</li>
+        <li>2nd item</li>
+        <li>3rd item</li>
+    </ol>
+
+    <!--ul possibilities: disc square circle-->
+    <ul type="square">
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+    </ul>
+
+    <!--nesting lists-->
+    <ul type="circle">
+        <li>1st item</li>
+        <ul type="square">
+            <li>1.1</li>
+            <li>1.2</li>
+            <li>1.3</li>
+        </ul>
+        <li>2nd item</li>
+        <li>3rd item</li>
+    </ul>
+
+    <!--Tables: tr = table row / td = table column-->
+    <table border="1">
+        <!--first row-->
+        <tr>
+            <td>first row, first column</td>
+            <td>first row, second column</td>
+        </tr>
+        <!--second row-->
+        <tr>
+            <td>second row, first column</td>
+            <td>second row, second column</td>
+        </tr>
+    </table>
+    <br>
+    <!--table with heading -> th -->
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Anthony</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td>Elke</td>
+            <td>45</td>
+        </tr>
+    </table>
+
+    <br>
+    <!--cellpadding vs cellspacing-->
+    <table border="1" cellpadding="10">
+        <tr>
+            <td>A lot of space</td>
+        </tr>
+    </table>
+
+    <br>
+    <table border="1" cellspacing="10">
+        <tr>
+            <td>no space at all</td>
+        </tr>
+    </table>
+
+    <!--merging rows-->
+    <table border="1">
+        <tr>
+            <td>1st row 1st col</td>
+            <td rowspan="2">2nd col</td>
+        </tr>
+        <tr>
+            <td>2nd row, 1st col</td>
+        </tr>
+    </table>
+
+    <br>
+    <!--merging columns-->
+    <table border="1">
+        <tr>
+            <td>first row first col</td>
+            <td>first row second col</td>
+        </tr>
+        <tr>
+            <td colspan="2">second row</td>
+        </tr>
+    </table>
+
+    <br>
+    <div style="background-color: aquamarine; color:azure; padding:2 0px; text-align: center;">
+        <p>This text will have everything from my division class</p>
+    </div>
+
+</body>
+
+</html>
