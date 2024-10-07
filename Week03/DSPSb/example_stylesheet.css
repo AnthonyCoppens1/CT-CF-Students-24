@@ -1,0 +1,39 @@
+/*This is how we write comments
+even across multiple lines*/
+
+/*ORDER: 1 inline, 2 internal, 3 external, 4 default*/
+body{
+    /*background-color: cornsilk;*/
+    background:linear-gradient(#e66465,#9198e5);
+    border: purple;
+    /*background-image: url("images/jpg/bgi.jpg");*/
+    /*background: #FFC0CB url("images/jpg/bgi.jpg") repeat-y right top;*/
+}
+
+/*with same style, group together*/
+h1, h2, p{
+    text-align: center;
+    color: red;
+    background-image: url("images/jpg/bgi.jpg");
+    border-style: dashed;
+    border-width: 5px;
+    border-color: cornflowerblue;
+    border-radius: 100px;
+    
+}
+
+div{
+    width:320px;
+    padding:10px;
+    border:5px solid gray;
+    margin: 0;
+
+    outline-style: dotted;
+    outline-color: violet;
+    outline-width: 5px;
+    /* if you wanna do all in one -> outline: dotted violet 5px */
+}
+
+p.spring{
+    color:green;
+}

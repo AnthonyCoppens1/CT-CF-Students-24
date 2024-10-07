@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html>
 
+<!-- .name = style for class, with nothing in front is universal, with eg div in front (div.xyz) 
+ it only works in div tags.-->
 <head>
     <title>Title of the page</title>
+    <link href="example_stylesheet.css" type="text/css" rel="stylesheet">
+    
+    <style>
+        footer{
+            text-align: center;
+            padding: 5px;
+            background-color: darkblue;
+            color:antiquewhite;
+        }
+        p{
+            text-align: center;
+        }
+
+        .xyz{ 
+            border: 20px outset black;
+            background-color: yellow;
+            text-align: center;
+        }
+
+        p#fall{
+            color:orange;
+        }
+
+        p.winter{
+            color:blue;
+        }
+
+    </style>
+    <h1 style="font-size:10vw">Hello World</h1>
+    <!--1 vw = 1% of viewport -> if viewport = 50cm / 1vw = 0.5cm-->
 </head>
 
-<body style="background-color: greenyellow;" class="bodyclass">
+<body class="bodyclass">
+
+    <div class="ex1">
+        <h4>test scenario</h4>
+    </div>
+
+
+    <p id="fall">It's autumn</p>
+    <p class="winter">It's winter</p>
+    <p class="spring">It's spring</p>
+
+
+
     This is the content of the page.
     <!--If you wanna take notes, do it in comments-->
     <!--<p> for paragraph-->
@@ -194,10 +238,70 @@
     </table>
 
     <br>
-    <div style="background-color: aquamarine; color:azure; padding:2 0px; text-align: center;">
-        <p>This text will have everything from my division class</p>
+
+    <!--Container elements -> starts on a new line and has it's complete height and width from to right-->
+    <div style="background-color: chocolate; color: white; padding: 2 0px;">
+        <h2>London</h2>
+        <p>London is the capital city of England. It is the most populated city in the United Kingdom
+            with a metropolitan area of over 13 million inhabitants.
+        </p>
     </div>
 
+    <div class="xyz">
+        <h2>Heading with style xyz</h2>
+        <p>random text</p>
+    </div>
+
+    <!--Inline elements: no new line-->
+    <p>The coloured text is an example of <span style="color: red;">spans</span> tag.</p>
+
+    <!--iframes -> webpage inside of a webpage-->
+    <iframe src="https://www.windows93.net/" style="border:none;"></iframe>
+
+
+    <!--Forms-->
+    <form action="" method="post">
+        Name:<br>
+        <input type="text" name="Name"><br>
+        Password:<br>
+        <input type="password" name="Password"><br>
+        <input type="submit" value="Click">
+    </form>
+
+    <form> <!--One choice-->
+        <input type="radio" name="gender" value="male" checked>Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" name="gender" value="x">x<br>
+        <input type="radio" name="gender" value="other">other<br>
+    </form>
+
+    <form>
+        textfield: <input type="text" name="text" size="40"><br>
+        textarea: <textarea rows="3" cols="30" name="txtar">Default text</textarea><br>
+        checkmarks:<br> <input type="checkbox" name="check" value="c1" checked>choice 1<br>
+        <input type="checkbox" name="check" value="c2">choice 2<br>
+
+        dropdownlist:
+        <select name="ddl">
+            <option>option1</option>
+            <option>option2</option>
+            <option>option3</option>
+        </select><br>
+
+        <button type="button" onclick="alert('Hello world!')">click me!</button>
+    </form>
+
+    <br><br>
+    <p style="color:darkorange; font-weight: bold;">This is the text to show inline styling</p>
+
+
+    <!--Other container elements-->
+    <h1>Heading x</h1>
+    <p>This is random text</p>
+    <footer>
+        <p>Author: Anthony</p>
+        <p><a href="mailto:anthony.coppens@thomasmore.be">anthony.coppens@thomasmore.be</a></p>
+    </footer>
 </body>
 
 </html>

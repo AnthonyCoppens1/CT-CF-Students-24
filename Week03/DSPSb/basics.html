@@ -2,12 +2,56 @@
 <html>
 
 <head>
+    <!--viewport or vw = 1vw -> 1% of your current viewport -> if viewport=50cm
+    1vw = 0.5cm-->
+    <!--link you need to work with external css-->
+    <link href="example_stylesheet.css" type="text/css" rel="stylesheet">
+
+    <h1 style="font-size: 10vw;">Hello world</h1>
+    <style>
+        footer{
+            text-align: center;
+            padding: 5px;
+            background-color:darkorange;
+            color: darkviolet;
+        }
+        p{
+            font-family: Arial;
+        }
+
+        div.xyz{
+            border: 20px outset black;
+            background-color: yellow;
+            text-align: center;
+        }
+
+        p#fall{
+            color:orange;
+        }
+
+        p.winter{
+            color: blue;
+        }
+
+    </style>
     <title>Title of the page</title>
 </head>
 
-<body style="background-color:darkturquoise;" class="bodyclass">
+<body class="bodyclass">
+
+    <p id="fall">It's autumn</p>
+    <p class="winter">It's winter</p>
+    <p class="spring">It's spring</p>
+
+    <div class="xyz">
+        <p>This is some text</p>
+        <h1>This is another part of it</h1>
+    </div>
+
+
+
     This is the content of the page.
-    <p>This is a paragraph</p>
+    <p class="xyz">This is a paragraph</p>
     <p>This is another one</p>
     <p>And a very last one.</p>
 
@@ -206,6 +250,67 @@
             <td colspan="2">second row</td>
         </tr>
     </table>
+
+    <br><br>
+    <!--container elements -> start on a new line and have a 
+    complete width from left to right-->
+    <div style="background-color: blueviolet; color: cornsilk; padding:2 0px">
+        <h2>London</h2>
+        <p>London is the capital city of England and it is the 
+            most populated city of the United Kingdom. It has a metropolitan
+            area of over 15 million inhabitants.
+        </p>
+    </div> 
+
+    <!--Inline elements: no new line-->
+    <p>The coloured text is an example of <span style="color:red;">spans</span> tag.</p>
+
+    <!--iframe -> webpage on a webpage-->
+    <iframe src="http://www.windows93.net" style="border: none;"></iframe>
+
+    <!--FORMS-->
+    <form action="" method="post">
+        <input type="text" name="Name"><br>
+        <input type="password" name="Password"><br>
+        <input type="submit" value="Submit"><br>
+    </form>
+
+    <form>
+        <input type="radio" name="gender" value="male" checked>Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" name="gender" value="x">X<br>
+        <input type="radio" name="gender" value="other">Other<br>
+    </form>
+
+    <form>
+        textfield:<input type="text" name="text" size="40"><br>
+        checkmarks:<br><input type="checkbox" name="check" value="c1" checked>choice 1<br>
+        <input type="checkbox" name="check" value="c2" >choice 2<br>
+        <input type="checkbox" name="check" value="c3" checked>choice 3<br>
+        textarea:<br><textarea rows="3" cols="30" name="txtar"></textarea><br>
+
+        dropdownlist:<br>
+        <select name="ddl">
+            <option>option1</option>
+            <option>option2</option>
+            <option>option3</option>
+        </select>
+
+        <br>
+        <button type="button" onclick="alert('Hello World!')">Click me!</button>
+    </form>
+
+    
+
+
+    <!--other container elements-->
+    <h1>Heading 1</h1>
+    <p>This is random text</p>
+    <footer>
+        <p>Author: Anthony</p>
+        <p><a href="mailto:anthony.coppens@thomasmore.be">anthony.coppens@thomasmore.be
+        </a></p>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,33 @@
+/*this is how we comment
+also on multiple lines*/
+
+body{
+    background-color: aquamarine;
+    border: red;
+    color:blueviolet;
+    background:linear-gradient(#e66465,#9198e5); /*instead of background linear gradient, if you put image here
+    then image is automatically repeated.*/
+    background-repeat: repeat;
+    /*background:#9198e5 url(images/jpg/bgi.jpg) no-repeat right top;*/
+}
+
+h1, h2, p{
+    color:lightcoral;
+    text-align: center;
+    background-image: url("images/jpg/bgi.jpg");
+    border-style:dashed;
+    border-width: 2px;
+    border-color: cadetblue;
+    border-radius: 100px;
+}
+
+/* order of working: 1 inline, 2 internal (head) 3 external 4 default*/
+
+p.spring{
+    color:blueviolet;
+}
+
+div.ex1{
+    width:300px;
+    background-color: brown;
+}
