@@ -3,20 +3,72 @@
 
 <head>
     <title>Dit is de titel van de pagina</title>
+
+    <h1 style="font-size: 10vw">Hello World!</h1>
+
+    <link href="voorbeeld_stylesheet.css" type="text/css" rel="stylesheet">
+    <!--1vw = 1% van volledige viewport -> als viewport 50cm 1vw=0.5cm-->
+    <style>
+        footer{
+            background-color: darkmagenta;
+            color: white;
+            text-align: center;
+        }
+
+        h4{
+            text-align: center;
+            color: red;
+        }
+
+        .xyz{
+            border: 20px outset black;
+            background-color: yellow;
+            text-align: center;
+        }
+
+        p.voorbeeld{
+            background-color: black;
+            color: white;
+        }
+
+        p.orange{
+            color:orange;
+        }
+
+        p#winter{
+            color:blue;
+        }
+    </style>
 </head>
 
-<body style="background-color: lightskyblue;" class="bodyclass">
+<body class="bodyclass">
+
+    <p class="orange">Het is herfst</p>
+    <p id="winter">Het is winter</p>
+    <p id="lente">Het is lente</p>
+
+
+    <div class="xyz">
+        <h2>Header met stijl xyz</h2>
+        <p> random tekst </p>
+    </div>
+
+    <div class="voorbeeld3">
+        TEST
+    </div>
+
+
     <!--Alles hiertussen is commentaar
         je kan ook op meerdere regels werken-->
-    <p>Dit is een alinea</p>
+    <p class="xyz">Dit is een alinea</p>
     <p>Dit is er ook een</p>
-    <p> dit is de laatste</p>
+    <p class="voorbeeld"> dit is de laatste</p>
 
     
     <h1>Dit is de grootste titel</h1>
     <h2>Dit is een kleinere</h2>
     <h3>NOG KLEINER</h3>
-    <h4>iets kleiner</h4>
+    <h4 style="text-align: left;">iets kleiner</h4>
 
     <!--shift alt f voor automatische opmaak
     <br> voor zachte enter (shift enter) zelfde alinea, volgende lijn-->
@@ -86,7 +138,7 @@
 
     <!--lijsten: 2 mogelijkheden -> unordered / ordered
     unordered = ul / ordered = ol-->
-    <ul>
+    <ul class="voorbeeld2">
         <li>eerste item</li>
         <li>tweede item</li>
         <li>derde item</li>
@@ -175,6 +227,94 @@
             <td>GEEN RUIMTE</td>
         </tr>
     </table>
+
+    <!--Samenvoegen van rijen-->
+    <table border="1">
+        <tr>
+            <td>1e rij, 1e kolom</td>
+            <td rowspan="2">2e kolom</td>
+        </tr>
+        <tr>
+            <td>2e rij, 1e kolom</td>
+        </tr>
+        <tr>
+            <td>3e rij, 1e kolom</td>
+            <td>3e rij, 2e kolom</td>
+        </tr>
+    </table>
+
+    <!--kolommen samenvoegen-->
+    <table border="1">
+        <tr>
+            <td>1e rij, 1e kolom</td>
+            <td>1e rij, 2e kolom</td>
+        </tr>
+        <tr>
+            <td colspan="2">2e rij</td>
+        </tr>
+    </table>
+
+
+    <!--container elementen: start op een nieuwe lijn en 
+    loopt van volledig links tot rechts-->
+    <div style="background-color: coral; color: cornflowerblue; padding: 2 0px;">
+        <h2>Londen</h2>
+        <p>Londen is de hoofdstad van Engeland en de drukstbevolkte stad van de UK.
+            Heeft ongeveer een 13 miljoen inwoners.
+        </p>
+    </div>
+
+    <!--inline elementen: geen nieuwe lijn-->
+    <p>De gekleurde tekst is een voorbeeld van de <span style="color:red">SPAN</span> tag.</p>
+
+
+    <!--Iframe: webpagina op een webpagina-->
+    <iframe src="http://www.windows93.net" style="border: none;"></iframe>
+
+
+    <!--Formulieren: FORMS-->
+    <form action="" method="post">
+        <input type="text" name="Naam" size="40"><br>
+        <input type="password" name="Wachtwoord"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!--keuzerondjes-->
+    <form>
+        <input type="radio" name="keuzes" value="keuze1">keuze 1<br>
+        <input type="radio" name="keuzes" value="keuze2" checked>keuze 2<br>
+        <input type="radio" name="keuzes" value="keuze3">keuze 3<br>
+    </form>
+
+    <form>
+        tekstveld van 1 rij: <input type="text" name="text" size="20"><br>
+        textarea: <textarea rows="3" cols="30" name="txtar">default text</textarea>
+
+        vinkjes: <br><input type="checkbox" name="check" value="c1" checked> keuze 1<br>
+        <input type="checkbox" name="check" value="c1" checked> keuze 2<br>
+
+        dropdownlist:
+        <select name="ddl">
+            <option>optie 1</option>
+            <option>optie 2</option>
+            <option>optie 3</option>
+        </select>
+
+        <br>
+        <button type="button" onclick="alert('Hello World!')">Click me!</button>
+    </form>
+
+
+    <!--andere containerelementen-->
+    <h1>Heading x</h1>
+    <p>Dit is random text</p>
+
+    <footer>
+        <p>Auteur: Anthony Coppens</p>
+        <p><a href="mailto:anthony.coppens@thomasmore.be">anthony.coppens@thomasmore.be
+        </a></p>
+    </footer>
+
     
 </body>
 

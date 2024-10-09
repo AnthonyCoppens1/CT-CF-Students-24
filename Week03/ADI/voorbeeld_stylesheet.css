@@ -1,0 +1,42 @@
+/*Dit is commentaar
+ovr meerdere lijnen*/
+
+/*volgorder van belangrijkheid: 1 INLINE, 2 INTERNAL (in style in head), 3 EXTERNAL,
+4 DEFAULT*/
+
+body{
+    background-color: darksalmon;
+    border:red;
+    border-width: 5px;
+    border-style: dashed;
+
+    background-image: url("images/jpg/patroon.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    background:linear-gradient(#e66465,#9198e5);
+}
+
+p{
+    color:aqua;
+    font-weight: bold;
+}
+
+/*elementen groeperen*/
+h1,h2,h3{
+    text-align: center;
+    color: fuchsia;
+}
+
+.voorbeeld2{
+    color:darkblue;
+}
+
+div.voorbeeld3{
+    text-align: end;
+}
+
+p#lente{
+    color:chartreuse;
+}
+
