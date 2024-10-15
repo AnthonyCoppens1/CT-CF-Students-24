@@ -1,0 +1,16 @@
+body{
+    background-color: white;
+    color: black;
+    padding: 25px;
+    font-size: 25px;
+}
+
+.dark-mode{
+    background-color:hsl(0, 0%, 15%);
+    color:white;
+}
+
+.light-mode{
+    background-color: white;
+    color:black;
+}

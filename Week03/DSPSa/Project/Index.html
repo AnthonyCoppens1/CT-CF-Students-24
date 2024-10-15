@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="stylesheet.css" type="text/css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+
+    <body onload="messageDay()">
+        <p id="message"></p>
+        <p id="hello">This is a test</p>
+        <p>Some text to see what happens</p>
+        <button type="button" onclick="helloWorld()">Click me!</button>
+
+        <br><button type="button" onclick="darkLight()">Dark or light?</button>
+
+        <br>Name: <input type="text" id="name"><br>
+        Password: <input type="password" id="pword"><br>
+        <button type="button" onclick="saveInputPrintOutput()">Show details</button>
+        <p id="output"></p><br><br>
+
+        <img src="../images/jpg/halloween.jpg" id="HW" onmouseover="colorInvert()"
+        height="25%" width="25%" onmouseout="colorNormal()">
+
+        <br><button type="button" onclick="forLoop()">SUM</button><br>
+        <p id="sum"></p>
+
+        <br><button type="button" onclick="date()">TODAY</button>
+        <br><p id="today"></p>
+
+
+    </body>
+</html>

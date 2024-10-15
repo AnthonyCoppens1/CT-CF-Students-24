@@ -31,3 +31,18 @@ div.ex1{
     width:300px;
     background-color: brown;
 }
+
+a:link, a:visited { 
+    background-color: aqua;
+    color:white;
+    text-align:center;
+}
+
+
+a:hover{
+    color:greenyellow;
+}
+
+a:active{
+    color:blue;
+}

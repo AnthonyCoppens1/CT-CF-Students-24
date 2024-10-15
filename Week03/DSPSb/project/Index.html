@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="stylesheet.css" type="text/css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+
+    <body onload="darkLight()">
+        <p id="hello">This is a test!</p>
+        <p>Some text to see what happens</p>
+        <button type="button" onclick="helloWorld()">Click me!</button>
+        <br><button type="button" onclick="darkLight()">DARK OR LIGHT?</button>
+        <br><br><img src="../images/jpg/HW.jpg" id="halloween" onmouseover="colorInvert()"
+        height="50%" width="50%" onmouseout="colorNormal()">
+
+        <br><input type="number" id="N"> 
+        <br><button type="button" onclick="forLoop()">SUM</button>
+        <p id="outputSum"></p>
+
+        <br><button type="button" onclick="date()">TODAY</button>
+        <p id="today"></p>
+
+    </body>
+</html>
