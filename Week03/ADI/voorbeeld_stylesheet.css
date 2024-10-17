@@ -40,3 +40,15 @@ p#lente{
     color:chartreuse;
 }
 
+a:link,a:visited{
+    color:green;
+}
+
+a:hover{
+    color:greenyellow;
+}
+
+a:active{
+    color:blue;
+}
+
