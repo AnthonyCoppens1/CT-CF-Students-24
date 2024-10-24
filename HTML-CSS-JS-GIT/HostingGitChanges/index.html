@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <meta charset="UTF-8">
+    <meta name="description" content="test">
+    <meta name="keywords" content="HTML,CSS & JavaScript">
+    <meta name="Author" content="Anthony">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 style="font-size:10vw">Hello World</h1>
+    <link href="test_stylesheet.css" type="text/css" rel="stylesheet">
+    <title>Anthoyn web page</title>
+    <style>
+        footer {
+            text-align: center;
+            padding: 5px;
+            background-color: greenyellow;
+            color: black;
+        }
+
+        .xyz {
+            border: 20px outset black;
+            background-color: yellow;
+            text-align: center;
+        }
+    </style>
+    <script src="website.js"></script>
+</head>
+
+<body style="background-color:yellow" class="bodyclass">
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <p>This is a paragraph</p>
+    <p>This is another paragraph</p>
+    <p>And another</p>
+
+    <h1>This is header 1</h1>
+    <h2>This is header 2</h2>
+    <h3>And header 3</h3>
+
+    This is tekst <br />with alinea end
+    and
+    lots of spaces and a horizontal line.
+    <hr />
+    another way of crea&nbsp;ting a space.
+    <!--This is how we write comments
+        and they can keep going / <br/> is a regular line break
+        <hr/> is a line break and draws a horizontal line / &nbsp; creates a space-->
+    <p>
+        <b>This text is bold.</b>
+        <i>This text is italic.</i>
+        <u>This text is underlined.</u>
+        <b><u><i>You can also combine everything or make a selection.</i></u></b>
+    </p>
+    <strong>This is also bold</strong>
+    <em>This is also italic</em>
+    <br>
+    <!--Linking to different pages -> hyperlinks-->
+    <!--Link to different file and use target="_blank" to open it into new tab-->
+    <a href="text.html" target="_blank">Click here</a> to open a different file in the directory<br>
+    <!--Open a specific image-->
+    <a href="images/jpg/santa.jpg">Click here</a> to open this specific image<br>
+    <!--mail somebody-->
+    <a href="mailto:anthony.coppens@thomasmore.be">mail me</a><br>
+
+    <!-- Target to other tab -->
+    <a href="#leven">Leven</a>
+
+    <img src="images/jpg/santa.jpg" alt="Descriptive Text" height="10%" width="10%">
+
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+    </ul>
+    <a href="https://www.example.com">Visit Example.com</a>
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+    </table>
+
+
+    <h4>
+        <a id=”leven”>
+            Leven
+        </a>
+    </h4> to open the website.
+
+
+    <div style="
+        background-color:black;
+        color:white;
+        padding:2 0px;
+        ">
+        <h2>
+            London
+        </h2>
+
+        <p>
+            London is the capital city of England.
+            It is the most populous city in the United Kingdom,
+            with a metropolitan area of over 13 million inhabitants.
+        </p>
+    </div>
+
+    <h1>Heading by anonymous</h1>
+    <p>This is the random Text. See below for <span class="fa fa-car">TEST</span>Footer tag. This is the random Text. See below for Footer tag. This is the
+        random Text. See below for Footer tag. This is the random Text. See below for Footer tag.</p>
+    <footer>
+        <p>Author: Anonymous</p>
+        <p><a href="mailto:anthony.coppens@thomasmore.be">anthony.coppens@thomasmore.be</a></p>
+    </footer>
+
+    <div class="xyz">
+        <h2>Heading which is inside div tag</h2>
+        <p>Just a random text</p>
+    </div>
+
+    <div class="ex2">
+        <h3>test</h3>
+    </div>
+
+    <form action="" method="post" onsubmit="return saveinputPrintOutPut()">
+        <br>
+        name: <input type="text" id="name" name="text" size="40"><br>
+        password: <input type="password" id="pword" name="password"><br>
+        <br>
+        check mark boxes:
+        <input type="checkbox" name="check" value="k1" checked>choice 1
+        <input type="checkbox" name="check" value="k2">choice 2<br>
+        <br>
+        choice circles:
+        <input type="radio" name="dilemma" value="agree" checked> agree
+        <input type="radio" name="dilemma" value="disagree" > disagree<br>
+        <br>
+        textbox:
+        <textarea rows="3" cols="30" name="txtar"></textarea><br>
+        <br>
+        <button type="submit">CLICK</button>
+    </form>
+    <div id="output"></div>
+</body>
+
+</html>

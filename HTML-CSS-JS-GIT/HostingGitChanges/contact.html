@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <title>Styles for id and classes</title>
+  <link href="stylesheet.css" type="text/css" rel="stylesheet">
+  <script src="website.js"></script>
+  <style>
+    p {
+      font-family: Arial;
+    }
+
+    p#fall {
+      color: orange;
+    }
+    .scheef{
+      color:black;
+    }
+  </style>
+</head>
+
+<body onload="messageDay()">
+  <nav class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+  <p id="message"></p>
+  <p id="hello">This is a test</p>
+  <button type="button" onclick="helloWorld()">Click me.</button>
+
+
+  <p>Some text to see what happens.</p>
+  <p id="fall">It's autumn</p>
+  <p style="color:blue">It's winter</p>
+  <p style="color:green">It's spring</p>
+  <button type="button" onclick="darkLight()">CLICK</button><br><br>
+
+  Number: <input type="text" id="nr" name="nr" size="40"><br><br>
+  <button type="button" onclick="guessingGame()">Guess</button>
+
+  <br>name: <input type="text" id="name" name="name"><br>
+  password: <input type="password" id="pword" name="password"><br>
+  <button type="button" onclick="saveinputPrintOutPut()">Show</button>
+  <p id="output"></p>
+
+  <img src="images/jpg/A.jpg" id="doggo" class="" onmouseover="colorInvert()" onmouseout="colorNormal()" height="50%" width="25%">
+
+
+  <br><button type="button" onclick="forLoopCount()">SUM</button>
+  <p id="outputSum"></p>
+  <br><button type="button" onclick="howOld()">TODAY</button>
+  <p id="future"></p>
+  
+</body>
+
+</html>
